@@ -45,9 +45,6 @@
       },
       'pdfjs-dist/build':{
         defaultExtension: 'js'
-      },
-      'dawnsdoodles': {
-        defaultExtension: 'js'
       }
     }
   });
