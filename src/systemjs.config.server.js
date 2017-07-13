@@ -36,7 +36,7 @@
         defaultExtension: 'js',
         meta: {
           './*.js': {
-            loader: './systemjs-angular-loader.js'
+            loader: './dawnsdoodles/src/systemjs-angular-loader.js'
           }
         }
       },
@@ -46,7 +46,6 @@
       'pdfjs-dist/build':{
         defaultExtension: 'js'
       }
-    },
-    baseURL: '/dawnsdoodles/'
+    }
   });
 })(this);
