@@ -18,6 +18,15 @@
     <!-- This SystemJS configuration loads umd packages from the web -->
     <script src="systemjs.config.server.js"></script>
     <script>System.import('main.js').catch(function(err){ console.error(err); });</script>
+    <script>// See http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/
+      (function(){
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
   </head>
   <body>
     <p></p>
