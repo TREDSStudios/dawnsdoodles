@@ -5,7 +5,7 @@
     <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="dawnsdoodles/src/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" />
 
     <!-- Polyfills -->
@@ -16,8 +16,8 @@
     <script src="https://unpkg.com/systemjs@0.19.39/dist/system.src.js"></script>
 
     <!-- This SystemJS configuration loads umd packages from the web -->
-    <script src="./systemjs.config.server.js"></script>
-    <script>System.import('./main.js').catch(function(err){ console.error(err); });</script>
+    <script src="dawnsdoodles/src/systemjs.config.server.js"></script>
+    <script>System.import('dawnsdoodles/src/main.js').catch(function(err){ console.error(err); });</script>
   </head>
   <body>
     <p></p>
